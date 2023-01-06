@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mshop/layout/appbar.dart';
+import 'package:mshop/layout/drawer.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -8,7 +9,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(),
-      drawer: const Drawer(),
+      drawer: drawer()
     );
   }
 }

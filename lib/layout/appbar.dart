@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 AppBar appBar() {
   return AppBar(
-      iconTheme: IconThemeData(
+      iconTheme: const IconThemeData(
         size: 28, //change size on your need
         color: Colors.white, //change color on your need
       ),
