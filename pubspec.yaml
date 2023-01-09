@@ -77,7 +77,7 @@ flutter:
   fonts:
     - family: kurdish
       fonts:
-        - asset: assets/fonst/kurdish.ttf
+        - asset: assets/fonts/kurdish.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

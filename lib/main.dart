@@ -4,16 +4,15 @@ import 'pages/home.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    // theme: ThemeData(
-    //     primaryColor: const Color.fromARGB(255, 193, 25, 0),
-    //     // ignore: deprecated_member_use
-    //     buttonColor: const Color.fromARGB(255, 193, 25, 0),
-    //     primarySwatch: Colors.red,
-    //     appBarTheme: const AppBarTheme(color: Color.fromARGB(255, 193, 25, 0))),
+    theme: ThemeData(
+        primaryColor: const Color.fromARGB(255, 255, 118, 27),
+        // ignore: deprecated_member_use
+        buttonColor: const Color.fromARGB(255, 255, 118, 27),
+        primarySwatch: Colors.orange,
+        appBarTheme: const AppBarTheme(color: Color.fromARGB(255, 255, 118, 27),)),
     initialRoute: '/',
     routes: {
       '/': (context) => const Home(),
     },
   ));
 }
-
