@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mshop/components/background_home.dart';
+import 'package:mshop/components/slider_product.dart';
 // import 'package:mshop/layout/appbar.dart';
 // import 'package:mshop/layout/drawer.dart';
 
@@ -13,12 +14,16 @@ class Home extends StatelessWidget {
         child: Scaffold(
           // appBar: appBar(),
           // drawer: drawer(),
-          body: ListView(
-            children: [
-              Column(
-                children: [BgHome()],
-              ),
-            ],
+          body: SingleChildScrollView(
+            child: Column(
+              children: [
+                const BgHome(),
+                const SizedBox(
+                  height: 20,
+                ),
+                SliderProducts()
+              ],
+            ),
           ),
         ));
   }
