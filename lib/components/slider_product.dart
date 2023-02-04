@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mshop/anim/pageRoute.dart';
+import 'package:mshop/pages/product.dart';
 
 class SliderProducts extends StatefulWidget {
   const SliderProducts({super.key});
@@ -57,7 +59,9 @@ class _SliderProductsState extends State<SliderProducts> {
                 style: TextStyle(fontFamily: 'kurdish', fontSize: 26),
               ),
               InkWell(
-                
+                onTap: () {
+                  Navigator.push(context, pageRoute(widget: AllProduct()));
+                },
                 child: Text(
                   "هەمى",
                   style: TextStyle(
