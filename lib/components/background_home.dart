@@ -14,7 +14,7 @@ class BgHome extends StatelessWidget {
           fit: BoxFit.cover,
         ),
         Container(
-          margin: const EdgeInsets.only(top: 30, left: 10, right: 10),
+          margin: const EdgeInsets.only(top: 60, left: 10, right: 10),
           decoration: BoxDecoration(
               color: Color.fromARGB(50, 255, 255, 255),
               borderRadius: BorderRadius.circular(10)),

@@ -5,6 +5,40 @@ class SliderProducts extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List products = [
+      {
+        'id': 1,
+        'title': 'رووس تیشێرت',
+        'price': '٢٠٠٠٠د.ن',
+        'discount': '٣٥٠٠٠د.ن',
+        'img':
+            'https://images.pexels.com/photos/1040424/pexels-photo-1040424.jpeg?auto=compress&cs=tinysrgb&w=1600'
+      },
+      {
+        'id': 2,
+        'title': 'رووس تیشێرت',
+        'price': '٢٠٠٠٠د.ن',
+        'discount': '٣٥٠٠٠د.ن',
+        'img':
+            'https://images.pexels.com/photos/1040424/pexels-photo-1040424.jpeg?auto=compress&cs=tinysrgb&w=1600'
+      },
+      {
+        'id': 3,
+        'title': 'رووس تیشێرت',
+        'price': '٢٠٠٠٠د.ن',
+        'discount': '٣٥٠٠٠د.ن',
+        'img':
+            'https://images.pexels.com/photos/1040424/pexels-photo-1040424.jpeg?auto=compress&cs=tinysrgb&w=1600'
+      },
+      {
+        'id': 4,
+        'title': 'رووس تیشێرت',
+        'price': '٢٠٠٠٠د.ن',
+        'discount': '٣٥٠٠٠د.ن',
+        'img':
+            'https://images.pexels.com/photos/1040424/pexels-photo-1040424.jpeg?auto=compress&cs=tinysrgb&w=1600'
+      },
+    ];
     return Column(
       children: [
         Padding(
@@ -35,378 +69,75 @@ class SliderProducts extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Wrap(
               children: [
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black12,
-                        blurRadius: 4,
-                        offset: Offset(4, 8), // Shadow position
-                      ),
-                    ],
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      ClipRRect(
-                        borderRadius: const BorderRadius.only(
-                            topLeft: Radius.circular(20),
-                            topRight: Radius.circular(20)),
-                        child: Image.network(
-                          'https://images.pexels.com/photos/1040424/pexels-photo-1040424.jpeg?auto=compress&cs=tinysrgb&w=1600',
-                          width: MediaQuery.of(context).size.width * 0.50,
-                          height: MediaQuery.of(context).size.height * 0.18,
-                          fit: BoxFit.cover,
+                for (Object product in products) ...{
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black12,
+                          blurRadius: 4,
+                          offset: Offset(4, 8), // Shadow position
                         ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.only(right: 10),
-                        child: Text(
-                          "رووس تیشێڕت",
-                          style: TextStyle(
-                              fontFamily: 'kurdish',
-                              fontSize: 18,
-                              color: Colors.black54),
+                      ],
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        ClipRRect(
+                          borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(20),
+                              topRight: Radius.circular(20)),
+                          child: Image.network(
+                            'https://images.pexels.com/photos/1040424/pexels-photo-1040424.jpeg?auto=compress&cs=tinysrgb&w=1600',
+                            width: MediaQuery.of(context).size.width * 0.50,
+                            height: MediaQuery.of(context).size.height * 0.18,
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 10),
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            const Text(
-                              "٢٠٠٠٠ د.ن",
-                              style: TextStyle(
-                                  fontFamily: 'kurdish', fontSize: 24),
-                            ),
-                            Container(
-                              width: 10,
-                            ),
-                            const Text(
-                              "٣٥٠٠٠ د.ن",
-                              style: TextStyle(
-                                decoration: TextDecoration.lineThrough,
+                        const Padding(
+                          padding: EdgeInsets.only(right: 10),
+                          child: Text(
+                            "رووس تیشێڕت",
+                            style: TextStyle(
                                 fontFamily: 'kurdish',
-                                color: Colors.black54,
+                                fontSize: 18,
+                                color: Colors.black54),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 10),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Text(
+                                "٢٠٠٠٠ د.ن",
+                                style: TextStyle(
+                                    fontFamily: 'regular', fontSize: 22),
                               ),
-                            )
-                          ],
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black12,
-                        blurRadius: 4,
-                        offset: Offset(4, 8), // Shadow position
-                      ),
-                    ],
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      ClipRRect(
-                        borderRadius: const BorderRadius.only(
-                            topLeft: Radius.circular(20),
-                            topRight: Radius.circular(20)),
-                        child: Image.network(
-                          'https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-                          width: MediaQuery.of(context).size.width * 0.50,
-                          height: MediaQuery.of(context).size.height * 0.18,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      const Text(
-                        "رووس تیشێڕت",
-                        style: TextStyle(
-                            fontFamily: 'kurdish',
-                            fontSize: 18,
-                            color: Colors.black54),
-                      ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Text(
-                            "٢٠٠٠٠ د.ن",
-                            style:
-                                TextStyle(fontFamily: 'kurdish', fontSize: 24),
+                              Container(
+                                width: 10,
+                              ),
+                              const Text(
+                                "٣٥٠٠٠ د.ن",
+                                style: TextStyle(
+                                  decoration: TextDecoration.lineThrough,
+                                  fontFamily: 'regular',
+                                  color: Colors.black54,
+                                ),
+                              )
+                            ],
                           ),
-                          Container(
-                            width: 10,
-                          ),
-                          const Text(
-                            "٣٥٠٠٠ د.ن",
-                            style: TextStyle(
-                              decoration: TextDecoration.lineThrough,
-                              fontFamily: 'kurdish',
-                              color: Colors.black54,
-                            ),
-                          )
-                        ],
-                      )
-                    ],
+                        )
+                      ],
+                    ),
                   ),
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black12,
-                        blurRadius: 4,
-                        offset: Offset(4, 8), // Shadow position
-                      ),
-                    ],
+                  SizedBox(
+                    width: 20,
                   ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      ClipRRect(
-                        borderRadius: const BorderRadius.only(
-                            topLeft: Radius.circular(20),
-                            topRight: Radius.circular(20)),
-                        child: Image.network(
-                          'https://images.pexels.com/photos/45982/pexels-photo-45982.jpeg?auto=compress&cs=tinysrgb&w=1600',
-                          width: MediaQuery.of(context).size.width * 0.50,
-                          height: MediaQuery.of(context).size.height * 0.18,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      const Text(
-                        "رووس تیشێڕت",
-                        style: TextStyle(
-                            fontFamily: 'kurdish',
-                            fontSize: 18,
-                            color: Colors.black54),
-                      ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Text(
-                            "٢٠٠٠٠ د.ن",
-                            style:
-                                TextStyle(fontFamily: 'kurdish', fontSize: 24),
-                          ),
-                          Container(
-                            width: 10,
-                          ),
-                          const Text(
-                            "٣٥٠٠٠ د.ن",
-                            style: TextStyle(
-                              decoration: TextDecoration.lineThrough,
-                              fontFamily: 'kurdish',
-                              color: Colors.black54,
-                            ),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black12,
-                        blurRadius: 4,
-                        offset: Offset(4, 8), // Shadow position
-                      ),
-                    ],
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      ClipRRect(
-                        borderRadius: const BorderRadius.only(
-                            topLeft: Radius.circular(20),
-                            topRight: Radius.circular(20)),
-                        child: Image.network(
-                          'https://images.pexels.com/photos/4904563/pexels-photo-4904563.jpeg?auto=compress&cs=tinysrgb&w=1600',
-                          width: MediaQuery.of(context).size.width * 0.50,
-                          height: MediaQuery.of(context).size.height * 0.18,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      const Text(
-                        "رووس تیشێڕت",
-                        style: TextStyle(
-                            fontFamily: 'kurdish',
-                            fontSize: 18,
-                            color: Colors.black54),
-                      ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Text(
-                            "٢٠٠٠٠ د.ن",
-                            style:
-                                TextStyle(fontFamily: 'kurdish', fontSize: 24),
-                          ),
-                          Container(
-                            width: 10,
-                          ),
-                          const Text(
-                            "٣٥٠٠٠ د.ن",
-                            style: TextStyle(
-                              decoration: TextDecoration.lineThrough,
-                              fontFamily: 'kurdish',
-                              color: Colors.black54,
-                            ),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black12,
-                        blurRadius: 4,
-                        offset: Offset(4, 8), // Shadow position
-                      ),
-                    ],
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      ClipRRect(
-                        borderRadius: const BorderRadius.only(
-                            topLeft: Radius.circular(20),
-                            topRight: Radius.circular(20)),
-                        child: Image.network(
-                          'https://images.pexels.com/photos/4904563/pexels-photo-4904563.jpeg?auto=compress&cs=tinysrgb&w=1600',
-                          width: MediaQuery.of(context).size.width * 0.50,
-                          height: MediaQuery.of(context).size.height * 0.18,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      const Text(
-                        "رووس تیشێڕت",
-                        style: TextStyle(
-                            fontFamily: 'kurdish',
-                            fontSize: 18,
-                            color: Colors.black54),
-                      ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Text(
-                            "٢٠٠٠٠ د.ن",
-                            style:
-                                TextStyle(fontFamily: 'kurdish', fontSize: 24),
-                          ),
-                          Container(
-                            width: 10,
-                          ),
-                          const Text(
-                            "٣٥٠٠٠ د.ن",
-                            style: TextStyle(
-                              decoration: TextDecoration.lineThrough,
-                              fontFamily: 'kurdish',
-                              color: Colors.black54,
-                            ),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black12,
-                        blurRadius: 4,
-                        offset: Offset(4, 8), // Shadow position
-                      ),
-                    ],
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      ClipRRect(
-                        borderRadius: const BorderRadius.only(
-                            topLeft: Radius.circular(20),
-                            topRight: Radius.circular(20)),
-                        child: Image.network(
-                          'https://images.pexels.com/photos/4904563/pexels-photo-4904563.jpeg?auto=compress&cs=tinysrgb&w=1600',
-                          width: MediaQuery.of(context).size.width * 0.50,
-                          height: MediaQuery.of(context).size.height * 0.18,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      const Text(
-                        "رووس تیشێڕت",
-                        style: TextStyle(
-                            fontFamily: 'kurdish',
-                            fontSize: 18,
-                            color: Colors.black54),
-                      ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Text(
-                            "٢٠٠٠٠ د.ن",
-                            style:
-                                TextStyle(fontFamily: 'kurdish', fontSize: 24),
-                          ),
-                          Container(
-                            width: 10,
-                          ),
-                          const Text(
-                            "٣٥٠٠٠ د.ن",
-                            style: TextStyle(
-                              decoration: TextDecoration.lineThrough,
-                              fontFamily: 'kurdish',
-                              color: Colors.black54,
-                            ),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: 20,
-                ),
+                },
               ],
             ),
           ),
