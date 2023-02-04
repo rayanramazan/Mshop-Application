@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mshop/components/background_home.dart';
 import 'package:mshop/components/slider_product.dart';
+import 'package:mshop/components/category.dart';
 // import 'package:mshop/layout/appbar.dart';
 // import 'package:mshop/layout/drawer.dart';
 
@@ -21,7 +22,8 @@ class Home extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                SliderProducts()
+                SliderProducts(),
+                Category(),
               ],
             ),
           ),

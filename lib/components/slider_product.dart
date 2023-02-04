@@ -76,7 +76,7 @@ class SliderProducts extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black12,
+                          color: Color.fromARGB(7, 0, 0, 0),
                           blurRadius: 4,
                           offset: Offset(4, 8), // Shadow position
                         ),
