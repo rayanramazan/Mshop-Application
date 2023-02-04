@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
-class SliderProducts extends StatelessWidget {
+class SliderProducts extends StatefulWidget {
   const SliderProducts({super.key});
 
+  @override
+  State<SliderProducts> createState() => _SliderProductsState();
+}
+
+class _SliderProductsState extends State<SliderProducts> {
   @override
   Widget build(BuildContext context) {
     List products = [
@@ -51,11 +56,14 @@ class SliderProducts extends StatelessWidget {
                 "نویترین",
                 style: TextStyle(fontFamily: 'kurdish', fontSize: 26),
               ),
-              Text(
-                "هەمى",
-                style: TextStyle(
-                    color: Color.fromARGB(255, 255, 118, 27),
-                    fontFamily: 'kurdish'),
+              InkWell(
+                
+                child: Text(
+                  "هەمى",
+                  style: TextStyle(
+                      color: Color.fromARGB(255, 255, 118, 27),
+                      fontFamily: 'kurdish'),
+                ),
               ),
             ],
           ),
